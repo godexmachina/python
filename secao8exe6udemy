@@ -1,0 +1,19 @@
+vetor = []
+cod = 0
+
+for n in range(0,5):
+    x = int(input("Digite o {0} código".format(n+1)))
+    vetor.append(x)
+
+cod = int(input("Digite 0 para terminar e 1 para mostar a lista inversa"))
+
+while cod < 0 or cod > 1:
+    print("\nDigite apenas 0 ou 1")
+    cod = int(input("\nDigite 0 para terminar e 1 para mostar a lista inversa"))
+
+if cod == 0:
+    print("fim de programa")
+elif cod == 1:
+    vetor.reverse()
+    print("Lista reversa: ",vetor.reverse())
+    print("fim")
